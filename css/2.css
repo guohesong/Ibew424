@@ -1,0 +1,870 @@
+#header.roundedBox {
+	border: 1px solid #ccc;
+	padding: 0;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		-webkit-box-shadow: #d3d3d3 0px 1px 2px;
+		-moz-box-shadow: #d3d3d3 0px 1px 2px;
+		box-shadow: #d3d3d3 0px 1px 2px;
+		background: transparent url(images/blue/_banner_2.jpg) 0 0 no-repeat;
+}
+	#header.trainingHeader {
+		background: transparent url(images/blue/_banner_training.jpg) 0 0 no-repeat !important;
+	}
+
+img#logo {
+	position:relative;
+	top:-16px;
+	margin: 0 0 -20px 0;
+}
+
+.styled-titles-block {
+	border: 1px solid #ccc;
+	margin: 0 0 12px 12px;
+	overflow: visible;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		-webkit-box-shadow: #d3d3d3 0px 1px 2px;
+		-moz-box-shadow: #d3d3d3 0px 1px 2px;
+		box-shadow: #d3d3d3 0px 1px 2px;
+		background: #ffffff;
+		background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(#e8e8e8));
+		background: -moz-linear-gradient(#ffffff, #e8e8e8);
+		background: linear-gradient(#ffffff, #e8e8e8);
+}
+
+#sidebar-left .block, #sidebar-right .styled-titles-block {
+	margin: 12px 12px 0 0;
+}
+
+.styled-titles-block h2 {
+	border-bottom: 1px solid #d9d9d9;
+	font-weight:normal;
+	margin: 0;
+	padding: 10px;
+		background: #f3f3f3;
+		background: -webkit-gradient(linear, 0 0, 0 bottom, from(#f3f3f3), to(#e8e8e8));
+		background: -moz-linear-gradient(#f3f3f3, #e8e8e8);
+		background: linear-gradient(#f3f3f3, #e8e8e8);
+}
+
+	.styled-titles-blue-block h2 {
+		background: #5780A8;
+		background: -webkit-gradient(linear, 0 0, 0 bottom, from(#5780A8), to(#365069));
+		background: -moz-linear-gradient(#5780A8, #365069);
+		background: linear-gradient(#5780A8, #365069);
+		color: #fff;
+	}
+	
+	.styled-titles-red-block h2 {
+		background: #DD3827;
+		background: -webkit-gradient(linear, 0 0, 0 bottom, from(#DD3827), to(#962318));
+		background: -moz-linear-gradient(#DD3827, #962318);
+		background: linear-gradient(#DD3827, #962318);
+		color: #fff;
+	}
+	
+.styled-titles-block .content p { 
+	padding: 10px;
+}
+
+.styled-titles-block .content .views-row {
+	border-bottom: 1px solid #d9d9d9;
+	padding: 12px;
+}
+
+#section2 .styled-titles-block .content .views-row {
+	border-bottom: 0;
+}
+#unionsYes {
+	background: transparent url(images/blue/unions-yes.png) no-repeat 0 0;
+	float: right;
+	height: 130px; width: 130px;
+	position: relative;
+	top: -30px;
+	right: -70px;
+	z-index: 100;
+}
+#block-views-News_Teasers_NewsPage-block_1 {
+  margin-top: -60px;
+}
+#block-views-News_Teasers_NewsPage-block_1 .views-field-title {
+  font-size: 140%;
+  color: #365069;
+  line-height: 1.2em;
+  margin-top: 40px;
+}
+#block-views-News_Teasers_NewsPage-block_1 .views-field-view-node {
+  float: right;
+  margin: -10px 0 20px 0;
+}
+
+#block-views-News_Teasers_NewsPage-block_2 {
+  margin-top: -60px;
+}
+#block-views-News_Teasers_NewsPage-block_2 .views-field-title {
+  font-size: 140%;
+  color: #365069;
+  line-height: 1.2em;
+  margin-top: 40px;
+}
+#block-views-News_Teasers_NewsPage-block_2 .views-field-view-node {
+  float: right;
+  margin: -10px 0 20px 0;
+}
+
+#masthead {
+  margin-top: -10px
+}
+.submitted {
+  display: none;
+}
+#block-views-Member_Dividend_Program-block_1 {
+  margin-top: -30px;
+}
+
+#block-views-Member_Dividend_Program-block_1 .views-row {
+  border: 1px solid #aa0000;
+    -moz-border-radius: 8px 8px 8px 8px;
+  padding: 10px 10px 0px 10px;
+  margin-bottom: 15px;
+}
+#block-views-Member_Dividend_Program-block_1 .views-field-title {
+  font-size: 140%;
+  color: #aa0000;
+  margin-bottom: 5px;
+}
+#block-views-Member_Dividend_Program-block_1 .views-label-field-location-value {
+  font-weight: bold;
+}
+#block-views-Member_Dividend_Program-block_1 .views-label-field-location-value {
+  margin-bottom: 0em;
+}
+#block-views-Member_Dividend_Program-block_1 .field-content p {
+  margin-top: 0em;
+  line-height: 1.2em;
+}
+
+.bgHighlight {
+	background: lime;
+}
+#block-views-EventsOnEventsPage-block_1 {
+  margin-top: -20px;
+}
+#block-views-EventsOnEventsPage-block_1 .views-field-title {
+  background-color: #365069;
+  font-size: 140%;
+  color: #ffffff;
+  padding: 5px 0 8px 10px;
+  margin-bottom: 10px;
+}
+#block-views-EventsOnEventsPage-block_1 .views-field-field-sponosr-value {
+  margin-bottom: 5px;
+}
+#block-views-EventsOnEventsPage-block_1 .views-field-field-when-value {
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+#block-views-EventsOnEventsPage-block_1 .views-field-field-where-value {
+  line-height: 0px;
+  margin-top: 15px;
+}
+#block-views-EventsOnEventsPage-block_1 .views-field-body {
+  line-height: 0px;
+  margin-top: 15px;
+}
+
+#block-views-d5629aa8578f80579117746ddef51357 {
+  margin-top: -40px;
+}
+#block-views-d5629aa8578f80579117746ddef51357 .views-field-title {
+  font-size: 120%;
+  color: #dd0000;
+  margin-top: 20px;
+}
+#block-views-d5629aa8578f80579117746ddef51357 .views-field-body {
+  line-height: 0px;
+  margin-top: 5px;
+}
+
+
+#section2 #block-4 p {
+  margin: -10px 0 -10px 0;
+}
+#section2 #block-4 img {
+  margin-top: 10px;
+}
+#section2 #block-3 p {
+  margin: -10px 0 -10px 0;
+}
+#section2 #block-3 img {
+  margin-top: 10px;
+}
+#views-f10cc3acc9ff625ee0aefd047fc3517b {
+  margin-left: 9px;
+  margin-right: 2px;
+}
+#views-f10cc3acc9ff625ee0aefd047fc3517b .views-field-title {
+  font-size: 140%;
+  color: #ff6600;
+}
+#views-f10cc3acc9ff625ee0aefd047fc3517b .views-field-field-more-info-value {
+  text-align: center;
+}
+#views-f10cc3acc9ff625ee0aefd047fc3517b .views-field-body {
+  margin-left: -10px;
+}
+#sidebar-right #block-6 ul {
+  margin-top: -20px;
+}
+#sidebar-right #block-7 .content {
+  margin: -16px -10px -29px -10px;
+}
+li {
+  line-height: 1.6em;
+}
+#webform-client-block-51 {
+  margin-bottom: 10px;
+}
+#webform-client-block-51 #webform-component-first-name {
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-bottom: -20px;
+}
+#webform-client-block-51 #webform-component-last-name {
+  margin-left: 10px;
+  margin-bottom: -20px;
+}
+#webform-client-block-51 #webform-component-email-address-proper {
+  margin-left: 10px;
+  margin-bottom: -20px;
+}
+#webform-client-block-51 #edit-actions {
+  margin-left: 10px;
+  padding-bottom: 10px;
+}
+#webform-client-block-51 .content p {
+  margin-bottom: -20px;
+}
+#webform-client-block-65 #webform-component-first-name {
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-bottom: -20px;
+}
+#webform-client-block-65 #webform-component-last-name {
+  margin-left: 10px;
+  margin-bottom: -20px;
+}
+#webform-client-block-65 #webform-component-your-question {
+  margin-left: 10px;
+  margin-bottom: -20px;
+}
+#webform-client-block-65 #webform-component-checkbox-question {
+  margin-left: 10px;
+  margin-bottom: -25px;
+  margin-right: 10px;
+}
+#webform-client-block-65 #webform-component-email-address {
+  margin-top: -15px;
+  margin-left: 10px;
+  margin-bottom: -20px;
+}
+#webform-client-block-65 #edit-actions {
+  margin-left: 10px;
+  padding-bottom: 10px;
+}
+#webform-client-block-65 .content p {
+  margin-bottom: -20px;
+}
+#block-views-Dispatches-block_1 {
+  margin-top: -30px;
+}
+#block-views-Dispatches-block_1 .views-row {
+  margin-bottom: 20px;
+}
+#block-views-Dispatches-block_1 .views-field-title {
+  font-size: 120%;
+  color: #dd0000;
+}
+#block-ddblock-1 {
+  margin-top: -5px;
+  margin-left: -10px;
+}
+
+#block-ddblock-2 {
+  	margin: -10px 0 30px -10px;
+    padding: 0 8px;
+}
+
+img.border {
+  border: solid;
+  border-width: 1px;
+  border-color: #365069;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  
+  padding: 4px;
+  background-color: #ffffff;
+}
+#views-Contractor_Quote-block_1 p {
+  font-size: 140%;
+  color: #365069;
+  font-weight: 400;
+  line-height: 1.4em;
+  margin-top: -10px;
+  margin-bottom: -5px;
+  text-align: center;
+  font-style: italic;
+}
+#views-Contractor_Quote-block_1 .views-field-field-contractor-company-value {
+  text-align: right;
+  color: #dd0000;
+  font-weight: 200;
+}
+#galleryGroupContainer0 {
+  border: solid;
+  border-width: 1px;
+  border-color: #365069;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  behavior: url(/PIE.htc);
+  padding: 4px;
+  background-color: #ffffff;
+  width: 300px;
+  height: 225px;  
+}
+.table-small {
+  font-size: 80%;
+  line-height: 1.2em;
+}
+#webform-client-block-86 #webform-component-first-name {
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-bottom: -20px;
+}
+#webform-client-block-86 #webform-component-last-name {
+  margin-left: 10px;
+  margin-bottom: -20px;
+}
+#webform-client-block-86 #webform-component-email-address {
+  margin-left: 10px;
+  margin-bottom: -20px;
+}
+#webform-client-block-86 #webform-component-phone-number {
+  margin-left: 10px;
+  margin-bottom: -20px;
+}
+#webform-client-block-86 #webform-component-comments {
+  margin-left: 10px;
+  margin-bottom: -20px;
+}
+#webform-client-block-86 #edit-actions {
+  margin-left: 10px;
+  padding-bottom: 10px;
+}
+#webform-client-block-86 .content p {
+  margin-bottom: -20px;
+}
+#webform-client-block-86 .textarea-identifier {
+  display: none;
+}
+#block-13 ul {
+  margin-left: -10px;
+  margin-right: 5px;
+}
+#block-14 ul {
+  margin-left: -10px;
+  margin-right: 5px;
+}
+#block-15 {
+  margin-bottom: 20px;
+}
+#block-15 ul {
+  margin-left: -10px;
+  margin-right: 5px;
+}
+#views-BulletinsOnHomepage-block_1 {
+  width: 594px;
+  min-height: 100px !important;
+}
+#views-BulletinsOnHomepage-block_1 .views-field-teaser {
+  margin-top: -25px;
+  margin-left: -12px;
+  margin-bottom: 15px;
+}
+#views-BulletinsOnHomepage-block_1 .views-field-view-node {
+  float: right;
+  margin-top: -20px;
+  margin-bottom: 5px;
+}
+#block-16 h2 {
+  margin-bottom: 20px;
+}
+#block-16 p {
+  margin-top: -20px;
+}
+#block-17 h2 {
+  margin-bottom: 30px;
+}
+#block-17 p {
+  margin-top: -30px;
+}
+#block-views-Jobline-block_1 {
+  margin-top: -30px;
+}
+#block-views-Jobline-block_1 .views-row {
+  margin-left: -10px;
+  border: 3px solid #dd0000;
+  border-radius: 8px 8px 8px 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  -webkit-border-radius: 8px 8px 8px 8px;
+  padding: 20px 20px 20px 20px;
+  margin-bottom: 15px;
+  background-color: #fcfcfc;
+}
+#block-views-Jobline-block_1 .views-field-title {
+  font-size: 140%;
+  color: #365069;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+#block-views-Jobline-block_1 .views-field-field-job-number-value, .views-field-field-if-none-value, .views-field-field-contractor-value, .views-field-field-location1-value, .views-field-field-job-description-value, .views-field-field-requisites-value, .views-field-field-job-open-date-value, .views-field-field-job-open-date-value2, .views-field-upload-fid, .views-field-field-total-positions-value, .views-field-field-positions-filled-value {
+  font-size: 110%;
+  margin-bottom: 8px;
+}
+#block-views-Jobline-block_1 .views-label-field-job-number-value, .views-label-field-if-none-value, .views-label-field-contractor-value, .views-label-field-location1-value, .views-label-field-job-description-value, .views-label-field-requisites-value, .views-label-field-job-open-date-value, .views-label-field-job-open-date-value2, .views-label-upload-fid, .views-label-field-total-positions-value, .views-label-field-positions-filled-value {
+  color: #dd0000;
+}
+#block-views-Jobline-block_1 ul {
+  margin-left: 20px;
+}
+#block-views-Jobline-block_1 .views-field-field-total-positions-value {
+  float: right;
+  border-left: 1px solid red; 
+  padding-left: 10px;
+}
+#block-views-Jobline-block_1 .views-field-field-positions-filled-value {
+  clear: right;
+  float: right;
+}
+#block-views-Jobline-block_1 .views-field-field-location1-value {
+  width: 300px;
+}
+#block-views-Jobline-block_1 .views-field-field-job-description-value .field-content {
+  margin-left: 15px;
+  width: 520px;
+}
+
+#block-views-Jobline-block_2 .views-row {
+  margin-left: -10px;
+  border: 3px solid #dd0000;
+  border-radius: 8px 8px 8px 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  -webkit-border-radius: 8px 8px 8px 8px;
+  padding: 20px 20px 20px 20px;
+  margin-bottom: 15px;
+  background-color: #fcfcfc;
+}
+#block-views-Jobline-block_2 .views-field-title {
+  font-size: 140%;
+  color: #365069;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+#block-views-Jobline-block_2 .views-field-field-job-number-value, .views-field-field-if-none-value, .views-field-field-contractor-value, .views-field-field-location1-value, .views-field-field-job-description-value, .views-field-field-requisites-value, .views-field-field-job-open-date-value, .views-field-field-job-open-date-value2, .views-field-upload-fid, .views-field-field-total-positions-value, .views-field-field-positions-filled-value, .views-field-field-job-filled-by-value {
+  font-size: 110%;
+  margin-bottom: 8px;
+}
+#block-views-Jobline-block_2 .views-label-field-job-number-value, .views-label-field-if-none-value, .views-label-field-contractor-value, .views-label-field-location1-value, .views-label-field-job-description-value, .views-label-field-requisites-value, .views-label-field-job-open-date-value, .views-label-field-job-open-date-value2, .views-label-upload-fid, .views-label-field-total-positions-value, .views-label-field-positions-filled-value, .views-label-field-job-filled-by-value {
+  color: #dd0000;
+}
+#block-views-Jobline-block_2 {
+  margin-top: -30px;
+}
+
+#block-views-Jobline-block_2 ul {
+  margin-left: 20px;
+}
+#block-views-Jobline-block_2 .views-field-field-total-positions-value {
+  float: right;
+  border-left: 1px solid red; 
+  padding-left: 10px;
+}
+#block-views-Jobline-block_2 .views-field-field-positions-filled-value {
+  clear: right;
+  float: right;
+}
+#block-views-Jobline-block_2 .views-field-field-job-filled-by-value {
+  clear: right;
+  float: right;
+}
+#block-views-Jobline-block_2 .views-field-field-job-filled-by-value .field-content {
+  text-align: right;
+}
+#block-views-Jobline-block_2 .views-field-field-job-filled-by-value p {
+  margin-top: -2px;
+  margin-bottom: -3px;
+}
+#block-views-Jobline-block_2 .views-field-field-job-description-value .field-content {
+  margin-left: 15px;
+  width: 600px;
+}
+#block-views-Jobline-block_2 .views-field-field-job-description-value p {
+  margin-top: -2px;
+  margin-bottom: -3px;
+}
+#newLabel {
+	float: left;
+  	border: 3px solid #dd0000;
+  	border-radius: 8px 8px 8px 8px;
+  		-moz-border-radius: 8px 8px 8px 8px;
+  		-webkit-border-radius: 8px 8px 8px 8px;
+	  	padding: 2px 4px;
+	  	background-color: #fcfcfc;
+	  	margin:0 10px 0 -20px;
+}
+#block-block-20 {
+background: #fcfcfc; /* for non-css3 browsers */
+
+	background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#f2eeee)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #ffffff,  #e8e8e8); /* for firefox 3.6+ */ margin:0 10px 10px 0;
+		margin-right: 0px;
+		margin-left: 12px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #cccccc;
+		position: relative;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		-webkit-box-shadow: #d3d3d3 0px 1px 2px;
+		-moz-box-shadow: #d3d3d3 0px 1px 2px;
+		box-shadow: #d3d3d3 0px 1px 2px;
+		padding-left: 10px;
+		padding-right: 10px;
+		behavior: url(/PIE.htc);
+}
+#block-block-20 p {
+  font-size: 90%;
+}
+.archive-search {
+  background-color: transparent;
+}
+.archive-search .views-row {
+  margin-left: 0px;
+  border: 3px solid #dd0000;
+  border-radius: 8px 8px 8px 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  -webkit-border-radius: 8px 8px 8px 8px;
+  padding: 20px 20px 20px 20px;
+  margin-bottom: 15px;
+  background-color: #fcfcfc;
+}
+.archive-search .views-field-title {
+  font-size: 140%;
+  color: #365069;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.archive-search .views-field-field-job-number-value, .views-field-field-if-none-value, .views-field-field-contractor-value, .views-field-field-location1-value, .views-field-field-job-description-value, .views-field-field-requisites-value, .views-field-field-job-open-date-value, .views-field-field-job-open-date-value2, .views-field-upload-fid, .views-field-field-total-positions-value, .views-field-field-positions-filled-value, .views-field-field-job-filled-by-value {
+  font-size: 110%;
+  margin-bottom: 8px;
+}
+.archive-search .views-label-field-job-number-value, .views-label-field-if-none-value, .views-label-field-contractor-value, .views-label-field-location1-value, .views-label-field-job-description-value, .views-label-field-requisites-value, .views-label-field-job-open-date-value, .views-label-field-job-open-date-value2, .views-label-upload-fid, .views-label-field-total-positions-value, .views-label-field-positions-filled-value, .views-label-field-job-filled-by-value {
+  color: #dd0000;
+}
+.archive-search ul {
+  margin-left: 20px;
+}
+.archive-search .views-field-field-total-positions-value {
+  float: right;
+  border-left: 1px solid red; 
+  padding-left: 10px;
+}
+.archive-search .views-field-field-positions-filled-value {
+  clear: right;
+  float: right;
+}
+.archive-search .views-field-field-job-filled-by-value {
+  clear: right;
+  float: right;
+}
+.archive-search .views-field-field-job-filled-by-value .field-content {
+  text-align: right;
+}
+.archive-search .views-field-field-job-filled-by-value p {
+  margin-top: -2px;
+  margin-bottom: -3px;
+}
+.archive-search .views-field-field-job-description-value .field-content {
+  margin-left: 15px;
+  width: 600px;
+}
+.archive-search .views-field-field-job-description-value p {
+  margin-top: -2px;
+  margin-bottom: -3px;
+}
+
+#block-21 h2 {
+  font-size: 110%;
+}
+#block-block-22 {
+  margin-top: -22px;
+  margin-left: -6px;
+  border: none;
+}
+
+/* main calendar */
+div.event-calendar .vevent {
+  height: 50px;
+}
+div.event-calendar .dtstart {
+  display: none;
+}
+div.event-calendar .title {
+  line-height: 1.2em;
+}
+.event-calendar td.sat {
+  background: none repeat scroll 0 0 #365069;
+}
+.event-calendar td.sun {
+  background: none repeat scroll 0 0 #365069;
+}
+.event-calendar td.today {
+  background: none repeat scroll 0 0 #D85959;
+}
+
+
+/* CITY CALENDARS */
+#block-views-CalgaryCalendar-block_1 .views-row-odd {
+  background-color: #fafafa;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+#block-views-CalgaryCalendar-block_1 .views-row-even {
+  background-color: #f6f6f6;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+#block-views-CalgaryCalendar-block_1 .date-display-start, .date-display-single {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+#block-views-CalgaryCalendar-block_1 .views-field-title {
+  font-size: 140%;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 20px;
+}
+#block-views-CalgaryCalendar-block_1 .views-field-field-edmonton-number-value {
+  padding-left: 20px;
+}
+#block-views-CalgaryCalendar-block_1 .views-label-field-edmonton-number-value {
+  color: rgb(221,0,0);
+}
+#block-views-CalgaryCalendar-block_1 .views-field-body {
+  margin-top: -5px;
+  padding-left: 20px;
+}
+.view-CalgaryCalendar .views-row-odd {
+  background-color: #fafafa;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.view-CalgaryCalendar .views-row-even {
+  background-color: #f6f6f6;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.view-CalgaryCalendar .views-field-tid {
+  font-size: 120%;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  float: left;
+  padding-right: 40px;
+}
+.view-CalgaryCalendar .views-field-title {
+  font-size: 120%;
+  margin-left: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.view-CalgaryCalendar .views-field-field-dates-value {
+  font-weight: 700;
+  margin-bottom: 5px;
+  clear: both;
+}
+.view-CalgaryCalendar .views-exposed-widget {
+  padding-right: 40px;
+}
+
+.view-EdmontonCalendar .views-row-odd {
+  background-color: #fafafa;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.view-EdmontonCalendar .views-row-even {
+  background-color: #f6f6f6;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.view-EdmontonCalendar .views-field-tid {
+  font-size: 120%;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  float: left;
+  padding-right: 40px;
+}
+.view-EdmontonCalendar .views-field-title {
+  font-size: 120%;
+  margin-left: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.view-EdmontonCalendar .views-field-field-dates-value {
+  font-weight: 700;
+  margin-bottom: 5px;
+  clear: both;
+}
+.view-EdmontonCalendar .views-exposed-widget {
+  padding-right: 40px;
+}
+
+
+
+/* CLASS CONTENT TYPE */
+div.event-nodeapi {
+  display: none;
+}
+.taxonomy li.first, .taxonomy li.last {
+  font-size: 140%;
+  font-weight: 400;
+}
+div.field-label-inline-first {
+  color: rgb(221,0,0);
+}
+.taxonomy_term_7 {
+  font-size: 180%;
+  margin-left: -25px;
+}
+
+div.field-type-date, div.field-field-duration {
+  margin-bottom: 5px;
+  font-size: 110%;
+}
+div.field-field-venue {
+  margin-top: 15px;
+  font-size: 110%;
+
+}
+div.field-field-venue p {
+  line-height: .8em;
+}
+div.field-field-instructor {
+  margin-top: 22px;
+  margin-bottom: 5px;
+  font-size: 110%;
+  width: 175;
+}
+div.field-field-prerequisites {
+  margin-top: 19px;
+  font-size: 110%;
+}
+div.field-field-prerequisites p {
+  line-height: 1.2em;
+}
+div.field-field-ppe {
+  margin-top: 19px;
+  font-size: 110%;
+}
+div.field-field-ppe p {
+  line-height: 1.2em;
+}
+#signup-form, #view-signup-user-list {
+  clear: both;
+  padding-top: 20px;
+}
+#signup-form {
+  display: none;
+}
+
+
+
+#block-views-vfd_schedule-block_1 .views-field-field-edmonton-number-value {
+  font-size: 140%;
+  margin-bottom: 5px;
+}
+
+#webform-client-form-51 fieldset.captcha {
+	background-color: #eee;
+	left: -30px;
+    position: relative;
+    width: 319px;
+}
+#webform-client-form-51 fieldset.captcha legend {
+	display: none;
+}
+
+#views-exposed-form-Jobline-page-1 .views-exposed-widget {
+  width: 140px;
+  margin-right: 20px;
+}
+#views-exposed-form-Jobline-page-1 #edit-field-contractor-value {
+  width: 140px;
+}
+#views-exposed-form-Jobline-page-1 #edit-field-location1-value {
+  width: 140px;
+}
+#views-exposed-form-Jobline-page-1 #edit-field-job-number-value {
+  width: 140px;
+}
+#views-exposed-form-Jobline-page-1 #edit-submit-Jobline {
+  margin-left: 65px;
+  margin-top: 3em;
+}
+
+#edit-submit-Jobline + .form-submit {
+	display: none;
+}
+
+/* TRAINING MENU, NEWS & NEWSLETTER BLOCKS */
+#jquerymenu-1 ul {
+  margin-left: -15px;
+}
+#jquerymenu-1 ul.jquerymenu li {
+  padding-bottom: 5px;
+}
+#block-18 {
+  padding-bottom: 10px;
+}
+
+#block-18 p {
+  margin-top: -5px;
+  margin-bottom: -10px;
+}
+#views-Training_News_Teasers-block_1 .views-field-teaser {
+  font-size: 90%;
+  margin-left: -10px;
+  margin-top: -10px;
+  margin-bottom: -20px;
+}
+#views-Training_News_Teasers-block_1 p {
+  line-height: 1.4em;
+}
+
+
+
+/* RSS Feeds */
+#joblineHomeFeedIcon {
+   margin-bottom: -35px;
+   }
+#meebo {
+  display: none;
+}
