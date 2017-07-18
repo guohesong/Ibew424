@@ -17,9 +17,11 @@ if (!require_once("mysqldata.php")) {die ("can not open mysqldata.php");}
  //exit;
  $data = new database;
 //$sql="select * from bidjob where firstName='" . $q1 . "'and lastName='" . $q2 . "'";
-
+  date_default_timezone_set("America/Regina");
+//date_default_timezone_set("America/Regina");
+$d=date("Y-m-d H-i-s");
 $sql="update bidjob set jobnumber1='" . $str[0] . "',jobnumber2='" . $str[1] . "',jobnumber3='" .$str[2]. "',jobnumber4='" . $str[3] . "',jobnumber5='" 
-       . $str[4] . "',jobnumber6='" . $str[5] . "' where firstName='" .$str[6]. "' and lastName='" .$str[7]. "'";
+       . $str[4] . "',jobnumber6='" . $str[5] . "' , biddate= '" . $d . "' where firstName='" .$str[6]. "' and lastName='" .$str[7]. "'";
 	$result=$data->query($sql);
 	$response= "job posted successfully.<br />" .  "<a href='login.php'>back to home</a>";
 echo $response	;

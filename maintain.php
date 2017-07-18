@@ -24,7 +24,7 @@
 	<html>
 	<head>
 	     <script>
-		 function editrecord(){
+		function editrecord(){
 		var fName=document.getElementById('firstName');
 		var lName=document.getElementById('lastName');
 		var pw=document.getElementById('password');
@@ -58,21 +58,25 @@
 	    var bNumber=document.getElementById('bookNumber');
       switch (str)	{
 		  
-			case 'Edit':
+			case 'Search':
 			if (!fName.value || !lName.value){ alert ("input the name of member.");location.href='maintain.php';return;}
-             /*
-        		 sql="select * from bidjob where ";			
-			    sql += " firstName='" + fName.value + "' and lastName='" + lName.value + "'";
-			    location.href="maintain_edit.php?q='" + sql +"'";  */
-				/*
+             sql="select * from bidjob where ";			
+			 sql += " firstName='" + fName.value + "' and lastName='" + lName.value + "'";
+			 sql ="select||"+ sql;
+			 break;
+			  //  location.href="maintain_edit.php?q='" + sql +"'";  */
+			
+             case 'Update':		
+                if (!fName.value || !lName.value){ alert ("input the name of member.");location.href='maintain.php';return;}			 
 				sql="update bidjob set firstName='"+fName.value+"',lastName='"+lName.value+"',password='"+pw.value+"',bookNumber='"+bNumber.value+
 		     "',area='"+area1.value+"',degree='"+deg.value+"'" + "where firstName='"+fName.value+"' and lastName='"+lName.value+"'"; 
-			 */
+			    sql = "update||" +sql;
+				/*
 			      q=fName.value + "||" + lName.value;
 	             document.getElementById('message').innerHTML=q;	
-			
-				 location.href="maintain_edit.php?q="+q;
+			     location.href="maintain_edit.php?q="+q;
 				 return;
+				 */
 				break;
 				
 			case "New":
@@ -82,10 +86,9 @@
 					location.href="maintain.php" ;
 				    return;
 				}
-				
-				
-			    sql="insert into bidjob (firstName,lastName,password,bookNumber,area,degree) values ('"; 
+				sql="insert into bidjob (firstName,lastName,password,bookNumber,area,degree) values ('"; 
 				sql +=fName.value+"','"+lName.value+"','" +pw.value+"','"+bNumber.value+"','"+area1.value+"','"+deg.value+"')";
+				sql="insert||" + sql;
 				document.getElementById('message').innerHTML=sql+"||"+str;
 				
 				break;
@@ -94,8 +97,10 @@
 			   if (!fName.value || !lName.value ){
 					alert ("Please fill out the name of the member.");
 					location.href="maintain.php";
+					return;
 				}
 			  sql="delete from bidjob where firstName='" +fName.value+"' and lastName='"+lName.value+"'";
+			  sql = "delete||" + sql;
 			  
 		  }
 			  
@@ -110,7 +115,15 @@
   xmlhttp.onreadystatechange=function() {
   if (xmlhttp.readyState==4 && xmlhttp.status==200)
     {
-      document.getElementById("message").innerHTML=xmlhttp.responseText;
+	  var str_r=xmlhttp.responseText;
+	  arr=str_r.split('||');
+	  var response=arr[1];
+	  if (arr[0]=="select"){
+		  fName.value=arr[1];lName.value=arr[2];pw.value=arr[3];
+		  bNumber.value=arr[4];deg.value=arr[6];area1.value=arr[5];
+		  response="record is searched.";
+	  }
+      document.getElementById("message").innerHTML=response;   //xmlhttp.responseText;
     }
   }
   xmlhttp.open("GET","maintain_back.php?q="+sql,true);
@@ -123,10 +136,11 @@
 	  <p><label>First Name:</label><input type="text" id="firstName" value="Michelle" ></p>
 	  <p><label> Last Name:</label><input type="text" id="lastName" value="Feng" ></p>
 	  <p><label>  password:</label><input type="text" id="password" value="1234"></p>
-	  <p><label>book number:</label><input type="text" id="bookNumber" value="110000"></p>
+	  <p><label>book number:</label><input type="text" id="bookNumber" value="110800"></p>
 	  <p><label>      Area:</label><input type="text" id="area" value="Alberta"></p>
 	  <p><label>     title:</label><input type="text" id="degree" value="Journey womon"></p>
-		<p><input type="button" value="Edit" onclick="editrecord()">
+		<p><input type="button" value="Search" onclick="maintain(this.value)">     <!-- editrecord() -->
+		   <input type="button" value="Update" onclick="maintain(this.value)">
 		   <input type="button" value="New" onclick="maintain(this.value)">
 		<!--   <input type="button" value="Edit" onclick="maintain(this.value)">  -->
 		   <input type="button" value="Delete" onclick="maintain(this.value)">

@@ -18,14 +18,14 @@
    if (empty($lastName) || empty($firstName) || empty($password) ) 
    {
 		$response = 'member or password can not be empty';
-		$response .="<a href='login.php'>click to back to login</a>";
+	    //$response .="<a href='login.php'>click to back to login</a>";
 		echo $response;
 		//header("Location:login.php");
 		exit;
 	}
  	if (!isset($_SESSION['IBEW'])) { $_SESSION['IBEW']=0; }
 	$_SESSION['IBEW'] ++;
-	if ($_SESSION['IBEW'] > 13) {
+	if ($_SESSION['IBEW'] > 3) {
 		$response="please contact the adminstor to reset your account!";
 		$response .= "you have tried:" . $_SESSION['IBEW'] . "times";
 		$response .="<a href='login.php'>click to back to login</a>";
@@ -57,7 +57,7 @@ $sql="select * from bidjob where lastName='" . $lastName . "' and password='" . 
 	} else {
 		$response= "you name or password don't match with our system, please try again.";
 		$response .= "you tried " . $_SESSION['IBEW'] . "times";
-		$response .= "<a href='login.php'> click me</a>";
+		//$response .= "<a href='login.php'> click me</a>";
 		echo $response;
 		//header ("Location:login.php");
 	}

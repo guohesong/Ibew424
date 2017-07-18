@@ -42,7 +42,7 @@
 			var txtq2=document.getElementById("txtq2");
 			var str=txt1.value + '||' + txt2.value +'||'+txt3.value +'||'+txt4.value +'||'+ 
 			        txt5.value + '||' + txt6.value +'||'+ txtq1.value +'||'+ txtq2.value;
-			document.getElementById("result").innerHTML=str;
+		//	document.getElementById("result").innerHTML=str;
 	
 		if (window.XMLHttpRequest) {
     // IE7+, Firefox, Chrome, Opera, Safari 执行代码
@@ -116,7 +116,7 @@
 	 $q1=$q[0];
 	 $q2=$q[1];
 	 $data = new database;
-	 $sql = "select * from bidjob where firstName='" . $q1 . "' and lastName='" . $q2 . "'";
+	 $sql = "select * from bidjob where firstName='" . $q[0] . "' and lastName='" . $q[1] . "'";
 	 $result=$data->query($sql);
 	 $row=mysqli_fetch_array($result);
 	 //$data->__destruct();
@@ -127,8 +127,8 @@
 	 <label>Book Number:</label><label> <?php echo $row['bookNumber'] ?> </label> <br />
 	 <label>Title:</label><label> <?php echo $row['degree'] ?> </label> <br />
 	 <form  >   <!--action="bid_update.php" method="post"  -->
-	 <input type="text" id="txtq1" name="q1" value="<?php echo $q1 ; ?>" hidden >
-	 <input type="text" id="txtq2" name="q2" value="<?php echo $q2 ; ?>" hidden > <br />
+	 <input type="text" id="txtq1" name="q1" value="<?php echo $q[0] ; ?>" hidden >
+	 <input type="text" id="txtq2" name="q2" value="<?php echo $q[1] ; ?>" hidden > <br />
 	 <label>Job One:</label><input type="text" id="txt1" name="jobnumber1">
 	 <label>Job Two:</label><input type="text" id="txt2" name="jobnumber2">
 	 <label>Job Three:</label><input type="text" id="txt3" name="jobnumber3"> <br /><br />

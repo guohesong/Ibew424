@@ -9,11 +9,13 @@ session_start();
 <title>Job biding System for Ibew 424</title>
 <script src="myjs.js"></script>
 <script>
-function center(){
+window.onload=function(){
 var inObj=document.getElementById("container");
 layerCenterH(inObj);
 layerCenterV(inObj);
+
 }
+
 </script>
 <style>
 body {
@@ -40,17 +42,21 @@ body {
 
 img {
 	float:left;
+	width:200px;
+	height:200px;
+}
+#formdiv {
+	float:left;
 	
 }
 h1 {
 	outline:#00ff00 dotted thick;
-	
 }
 input  {
 	padding:10px;
 	color:green;
 	background:gray;
-	
+	text-align:center;
 }
 input [type="submit"] {
 	text-align:center;
@@ -104,15 +110,13 @@ location.href="browsebiding.php?q="+q1+"||"+q2;
 </script>
 <link rel="shortcut icon" href="favicon.ico">
 </head>
-<body  onload="center()" >  
+<body   >  
       <div  id="container">
-       <form   >  <!--action="checkLogin.php" method="post"-->
-
-		
+       <form   > 
        <div   >
-	   
 	    <h1 >IBEW424 Job Bidding</h1> <br />
-		<img src="images/ibewlogo.png" width="50px" height="50px" />
+		<img src="images/ibewlogo.png" />
+		  <div id="formdiv" >
 	     <table class="logintable">
 		 <tr>
 		   <td>First Name</td><td><input id="txt1" type="text" name="firstName" value="Robert" /></td>
@@ -134,9 +138,9 @@ location.href="browsebiding.php?q="+q1+"||"+q2;
 		 </tr>
          </table>
 		
-		 <div id="logincheckdiv" ></div>
+		 <div id="logincheckdiv" ></div></div>
 		</div>
-		<?php var_dump (gd_info()); ?>
+		<?php //var_dump (gd_info()); ?>
 
         </form> 
    
