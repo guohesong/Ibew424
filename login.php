@@ -10,44 +10,43 @@ session_start();
 <script src="myjs.js"></script>
 <script>
 window.onload=function(){
-var inObj=document.getElementById("container");
-layerCenterH(inObj);
-layerCenterV(inObj);
+var inObj=document.getElementsByClassName("container");
+layerCenterH(inObj[0]);
+layerCenterV(inObj[0]);
 
 }
 
 </script>
 <style>
-body {
+.container {
 	background-image:url("images/lrock011.jpg");
 	background-repeat:repeat;
 	font-family: Times, TimesNR;
 	font-variant:small-caps;
 	font-weight:900;
-}
-#container {
-	
-	display:block;
+	width: 500px;
+	height:400px;
 	position:absolute;
 	color:green;
 	padding:15px 15px 15px 15px;
 }
+
+}
 .logintable {
-	color:#f60;
-	background:#666;
+	width:400px;
+	//color:green;
+	//background:#666;
 	font-size:20px;
 	padding:10px;
-	
+	//border:1;
 }
 
-img {
-	float:left;
-	width:200px;
-	height:200px;
+table .ttd {
+	color:green;
+	//text-align:center;
 }
 #formdiv {
 	float:left;
-	
 }
 h1 {
 	outline:#00ff00 dotted thick;
@@ -55,13 +54,28 @@ h1 {
 input  {
 	padding:10px;
 	color:green;
-	background:gray;
+	background:#339999;
 	text-align:center;
+	width:200px;
 }
-input [type="submit"] {
-	text-align:center;
-	color:#f60;
+.btncmd {
+	width:150px;
 	
+}
+input [type="button"] {
+	text-align:center;
+	
+}
+.responsive {
+	display : inline block;
+//	height :auto;
+	//width: 100%;
+	
+}
+img {
+	float:left;
+	width:50px;
+	height:50px;
 }
 </style>
 <script>
@@ -111,30 +125,33 @@ location.href="browsebiding.php?q="+q1+"||"+q2;
 <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body   >  
-      <div  id="container">
+      <div  class="container">
        <form   > 
        <div   >
-	    <h1 >IBEW424 Job Bidding</h1> <br />
-		<img src="images/ibewlogo.png" />
+	    <br />
+		
 		  <div id="formdiv" >
-	     <table class="logintable">
-		 <tr>
-		   <td>First Name</td><td><input id="txt1" type="text" name="firstName" value="Robert" /></td>
+	     <table class="logintable" border=1 >
+		 <tr colspan=2 align="center">
+		   <h1 >IBEW424 Job Bidding</h1>
 		 </tr>
 		 <tr>
-		   <td>Last Name</td><td><input  id="txt2"type="text"  name="lastName" value="Song" /></td>
+		   <td><span class="ttd" align="center">First Name</span></td><td><input id="txt1" type="text" name="firstName" value="Robert" /></td>
 		 </tr>
 		 <tr>
-		   <td>Password</td><td><input  id="txt3" type="password"  name="password" value="1234"/></td>
+		   <td><span class="ttd">Last Name</span></td><td><input  id="txt2"type="text"  name="lastName" value="Song" /></td>
+		 </tr>
+		 <tr>
+		   <td><span class="ttd">Password</span></td><td><input  id="txt3" type="password"  name="password" value="1234"/></td>
 		 </tr>
 		 <tr  >
-		   <td colspan="2" align="center"><input type="button" value="Log  In"  onclick="logincheck()"   /></td>
+		   <td colspan="2" align="center"><img src="images/ibewlogo.png" class="responsive"/><input type="button" class="btncmd" value="Log  In"  onclick="logincheck()"  /></td>
 		 </tr>
 		 <tr>
 		   <td colspan="2" align="center">
-         <input type="button" value="Bid a Job" onclick="bidajob()">
-		 <input type="button" value="Maintain"  onclick="location.href='maintain.php';">
-		 <input type="button" value="Browse bidding" onclick="location.href='browsebiding.php';">   </td>
+         <input type="button" class="btncmd" value="Bid a Job" onclick="bidajob()">
+		 <input type="button" class="btncmd" value="Maintain"  onclick="location.href='maintain.php';">
+		 <input type="button" class="btncmd" value="Browse bidding" onclick="location.href='browsebiding.php';">   </td>
 		 </tr>
          </table>
 		
@@ -145,6 +162,32 @@ location.href="browsebiding.php?q="+q1+"||"+q2;
         </form> 
    
       </div> <!-- end of container -->
+<table  cellspacing=1 border=5 >
+<tr >
+  <th bgcolor="#a69abd">Name</th>
+  <th colspan="2">Telephone</th>
+</tr>
+<tr>
+  <td bgcolor="#a69abd" >Bill Gates</td>
+  <td width="100" align="center">555 77 854</td>
+  <td>555 77 855</td>
+</tr>
+</table>
+
+<h4>单元格跨两列:</h4>
+<table border="1">
+<tr>
+  <th>First Name:</th>
+  <td>Bill Gates</td>
+</tr>
+<tr>
+  <th rowspan="2">Telephone:</th>
+  <td>555 77 854</td>
+</tr>
+<tr>
+  <td>555 77 855</td>
+</tr>
+</table>
 </body>
 
 </html>
