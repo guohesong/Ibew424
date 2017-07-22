@@ -38,19 +38,6 @@ $scope.editUser = function(id) {
 	for (var i=0;i<$scope.names.length;i++){
 		if ($scope.names[i].id == id ) {
 			$scope.fName = $scope.names[i].firstName;
-	        $scope.lName = $scope.names[i].lastName; 
-			$scope.bookNumber = $scope.names[i].bookNumber;
-			
-			break;
-		}
-	}
-	/*
-	$scope.fName = $scope.users[id-1].fName;
-	$scope.lName = $scope.users[id-1].lName; 
-	
-	for (var i=0;i<$scope.names.length;i++){
-		if ($scope.names[i].id == id ) {
-			$scope.fName = $scope.names[i].firstName;
 	        $scope.lName = $scope.names[i].lastName;
             $scope.bookNumber = $scope.names[i].bookNumber;			
 			$scope.password = $scope.names[i].password;
@@ -65,6 +52,11 @@ $scope.editUser = function(id) {
 			break;
 		}
 	}
+	/*
+	$scope.fName = $scope.users[id-1].fName;
+	$scope.lName = $scope.users[id-1].lName; 
+	
+	
      */	
 
   }

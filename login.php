@@ -1,9 +1,7 @@
 <?php 
 error_reporting(E_ALL);
 session_start(); 
-
-//This is a simplified HTML Document 
-?> 
+?>
 <html>
 <head>
 <title>Job biding System for Ibew 424</title>
@@ -11,72 +9,14 @@ session_start();
 <script>
 window.onload=function(){
 var inObj=document.getElementsByClassName("container");
-layerCenterH(inObj[0]);
-layerCenterV(inObj[0]);
+//layerCenterH(inObj[0]);
+//layerCenterV(inObj[0]);
 
 }
 
 </script>
 <style>
-.container {
-	background-image:url("images/lrock011.jpg");
-	background-repeat:repeat;
-	font-family: Times, TimesNR;
-	font-variant:small-caps;
-	font-weight:900;
-	width: 500px;
-	height:400px;
-	position:absolute;
-	color:green;
-	padding:15px 15px 15px 15px;
-}
 
-}
-.logintable {
-	width:400px;
-	//color:green;
-	//background:#666;
-	font-size:20px;
-	padding:10px;
-	//border:1;
-}
-
-table .ttd {
-	color:green;
-	//text-align:center;
-}
-#formdiv {
-	float:left;
-}
-h1 {
-	outline:#00ff00 dotted thick;
-}
-input  {
-	padding:10px;
-	color:green;
-	background:#339999;
-	text-align:center;
-	width:200px;
-}
-.btncmd {
-	width:150px;
-	
-}
-input [type="button"] {
-	text-align:center;
-	
-}
-.responsive {
-	display : inline block;
-//	height :auto;
-	//width: 100%;
-	
-}
-img {
-	float:left;
-	width:50px;
-	height:50px;
-}
 </style>
 <script>
 function logincheck(){
@@ -94,7 +34,7 @@ function logincheck(){
   xmlhttp.onreadystatechange=function() {
   if (xmlhttp.readyState==4 && xmlhttp.status==200)
     {
-      document.getElementById("logincheckdiv").innerHTML=xmlhttp.responseText;
+      document.getElementById("logincheckdiv").innerHTML = xmlhttp.responseText;
     }
   }
   xmlhttp.open("GET","checklogin.php?q="+str,true);
@@ -123,9 +63,57 @@ location.href="browsebiding.php?q="+q1+"||"+q2;
 }
 </script>
 <link rel="shortcut icon" href="favicon.ico">
+<meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body   >  
-      <div  class="container">
+     <center>   <img src="../img/unionexcellence.png" width=60% height="120px"  /> </center>
+	  
+	  <div class="container">
+	   <br /> <br />
+	<div class="row clearfix"> 
+	     <div class="col-md-4 column">
+			 <button type="button" class="btn btn-info btn-lg btn-block" value="Bid a Job" onclick="bidajob()" >Bid a Job</button>
+			 <button type="button" class="btn btn-info btn-lg btn-block" value="Maintain"  onclick="location.href='maintain.php';">Maintain</button> 
+			 <button type="button" class="btn btn-info btn-lg btn-block" value="Browse bidding" onclick="location.href='browsebiding.php';">Browse bidding</button>
+		</div>
+		<div class="col-md-8 column">
+			<form class="form-horizontal" role="form">
+				<div class="form-group">
+					 <label for="inputEmail3" class="col-sm-2 control-label" >First Name</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="txt1" name="firstName" value="Robert"  />
+					</div>
+				</div>
+				<div class="form-group">
+					 <label for="inputPassword3" class="col-sm-2 control-label">Last Name</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="txt2" name="lastName" value="Song" />
+					</div>
+				</div>
+				<div class="form-group">
+					 <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+					<div class="col-sm-10">
+						<input type="password" class="form-control" id="txt3" name="password" value="1234" />
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<div class="col-sm-offset-6 col-sm-8">
+						 <button type="submit" class="btn btn-default"  onclick="logincheck()" >Log  In</button>
+					</div >
+					
+				</div>
+			</form>
+		
+	</div>	
+	</div>
+</div>
+	  
+	  <!--
+	    <div  class="container">
        <form   > 
        <div   >
 	    <br />
@@ -155,39 +143,15 @@ location.href="browsebiding.php?q="+q1+"||"+q2;
 		 </tr>
          </table>
 		
-		 <div id="logincheckdiv" ></div></div>
+		</div>
 		</div>
 		<?php //var_dump (gd_info()); ?>
 
         </form> 
    
       </div> <!-- end of container -->
-<table  cellspacing=1 border=5 >
-<tr >
-  <th bgcolor="#a69abd">Name</th>
-  <th colspan="2">Telephone</th>
-</tr>
-<tr>
-  <td bgcolor="#a69abd" >Bill Gates</td>
-  <td width="100" align="center">555 77 854</td>
-  <td>555 77 855</td>
-</tr>
-</table>
 
-<h4>单元格跨两列:</h4>
-<table border="1">
-<tr>
-  <th>First Name:</th>
-  <td>Bill Gates</td>
-</tr>
-<tr>
-  <th rowspan="2">Telephone:</th>
-  <td>555 77 854</td>
-</tr>
-<tr>
-  <td>555 77 855</td>
-</tr>
-</table>
+<div class="col-sm-offset-4 "  id="logincheckdiv" >good morning</div>
 </body>
 
 </html>

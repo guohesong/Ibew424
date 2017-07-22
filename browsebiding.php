@@ -48,15 +48,6 @@
 	   <td>{{ name.firstName }}</td>
        <td>{{ name.lastName }}</td>
 	   <td>{{ name.bookNumber }}</td>
-	   
-      <!--
-	   <td>{{ user.fName }}</td>
-       <td>{{ user.lName }}</td>
-	   <td>{{ user.id }}</td>
-	 
-	   <td>{{ name.firstName }}</td>
-       <td>{{ name.lastName }}</td>
-	   <td>{{ name.bookNumber }}</td>
 	   <td>{{ name.degree }}</td>
 	   <td>{{ name.area }}</td>
        <td>{{ name.password }}</td>
@@ -66,6 +57,15 @@
        <td>{{ name.jobnumber4 }}</td>
 	   <td>{{ name.jobnumber5 }}</td>
 	   <td>{{ name.jobnumber6 }}</td>
+      <!--
+	   <td>{{ user.fName }}</td>
+       <td>{{ user.lName }}</td>
+	   <td>{{ user.id }}</td>
+	 
+	   <td>{{ name.firstName }}</td>
+       <td>{{ name.lastName }}</td>
+	   <td>{{ name.bookNumber }}</td>
+	   
 	   -->
 	 
 	</tr>
@@ -78,87 +78,102 @@
 </button>
 <hr>
 
-<h3 ng-show="edit">>Create New Member:</h3>
+<h3 ng-show="edit">Create New Member:</h3>
 <h3 ng-hide="edit">Edit Member:</h3>
 
-<form class="form-horizontal"> <!-- horizontal -->
-  <div class="form-group">
-    <label class="col-sm-2 control-label">First Name:</label>
-    <div class="col-sm-10">
+<div class="row clearfix">
+<form class="form-horizontal"> 
+		<div class="col-md-6 column">
+		 <div class="form-group">
+    <label class="col-sm-4 control-label">First Name:</label>
+    <div class="col-sm-8">
     <input type="text" ng-model="fName" ng-disabled="!edit" placeholder="First Name">
     </div>
   </div> 
   <div class="form-group">
-    <label class="col-sm-2 control-label">Last Name:</label>
-    <div class="col-sm-10">
+    <label class="col-sm-4 control-label">Last Name:</label>
+    <div class="col-sm-8">
     <input type="text" ng-model="lName" ng-disabled="!edit" placeholder="Last Name">
     </div>
   </div>
   <div class="form-group">
-    <label class="col-sm-2 control-label">Book Number:</label>
-    <div class="col-sm-10">
-    <input type="password" ng-model="bookNumber" placeholder="Book Number">
+    <label class="col-sm-4 control-label">Book Number:</label>
+    <div class="col-sm-8">
+    <input type="text" ng-model="bookNumber" placeholder="Book Number">
     </div>
   </div>
   <div class="form-group">
-    <label class="col-sm-2 control-label">password:</label>
-    <div class="col-sm-10">
+    <label class="col-sm-4 control-label">password:</label>
+    <div class="col-sm-8">
     <input type="password" ng-model="password" placeholder="password">
+	</div></div>
 	<div class="form-group">
-    <label class="col-sm-2 control-label">confirm:</label>
-    <div class="col-sm-10">
+    <label class="col-sm-4 control-label">confirm:</label>
+    <div class="col-sm-8">
     <input type="password" ng-model="passw2" placeholder="confirm">
     </div>
   </div>
   <div class="form-group">
-    <label class="col-sm-2 control-label">Title:</label>
-    <div class="col-sm-10">
-    <input type="password" ng-model="degree" placeholder="Title">
+    <label class="col-sm-4 control-label">Title:</label>
+    <div class="col-sm-8">
+    <input type="text" ng-model="degree" placeholder="Title">
     </div>
   </div>
-  <div class="form-group">
-    <label class="col-sm-2 control-label">Area:</label>
-    <div class="col-sm-10">
-    <input type="password" ng-model="area" placeholder="Address">
+	 <div class="form-group">
+    <label class="col-sm-4 control-label">Address:</label>
+    <div class="col-sm-8">
+    <input type="text" ng-model="area" placeholder="Address">
     </div>
-  </div>
-  <div class="form-group">
-    <label class="col-sm-2 control-label">Bid One:</label>
-    <div class="col-sm-10">
-    <input type="password" ng-model="jobnumber1" placeholder="Job Number one">
-  </div>
-    </div>
-	<div class="form-group">
-    <label class="col-sm-2 control-label">Bid Two:</label>
-    <div class="col-sm-10">
-    <input type="password" ng-model="jobnumber2" placeholder="Job Number two">
+  </div>	
+		</div>
+		</form>
+		<form class="form-horizontal"> 
+		<div class="col-md-6 column">
+		 <div class="form-group">
+    <label class="col-sm-4 control-label">Bid One:</label>
+    <div class="col-sm-8">
+    <input type="text" ng-model="jobnumber1" placeholder="Job Number one">
   </div>
     </div>
 	<div class="form-group">
-    <label class="col-sm-2 control-label">Bid Three:</label>
-    <div class="col-sm-10">
-    <input type="password" ng-model="jobnumber3" placeholder="Job Number Three">
+    <label class="col-sm-4 control-label">Bid Two:</label>
+    <div class="col-sm-8">
+    <input type="text" ng-model="jobnumber2" placeholder="Job Number two">
   </div>
     </div>
 	<div class="form-group">
-    <label class="col-sm-2 control-label">Bid Four:</label>
-    <div class="col-sm-10">
-    <input type="password" ng-model="jobnumber4" placeholder="Job Number four">
+    <label class="col-sm-4 control-label">Bid Three:</label>
+    <div class="col-sm-8">
+    <input type="text" ng-model="jobnumber3" placeholder="Job Number Three">
   </div>
     </div>
 	<div class="form-group">
-    <label class="col-sm-2 control-label">Bid Five:</label>
-    <div class="col-sm-10">
-    <input type="password" ng-model="jobnumber5" placeholder="Job Number five">
+    <label class="col-sm-4 control-label">Bid Four:</label>
+    <div class="col-sm-8">
+    <input type="text" ng-model="jobnumber4" placeholder="Job Number four">
   </div>
     </div>
 	<div class="form-group">
-    <label class="col-sm-2 control-label">Bid Six:</label>
-    <div class="col-sm-10">
-    <input type="password" ng-model="jobnumber6" placeholder="Job Number six">
+    <label class="col-sm-4 control-label">Bid Five:</label>
+    <div class="col-sm-8">
+    <input type="text" ng-model="jobnumber5" placeholder="Job Number five">
   </div>
     </div>
+	<div class="form-group">
+    <label class="col-sm-4 control-label">Bid Six:</label>
+    <div class="col-sm-8">
+    <input type="text" ng-model="jobnumber6" placeholder="Job Number six">
   </div>
+    </div>
+		
+		</div>
+	</div>
+</form>
+<form class="form-horizontal"> <!-- horizontal -->
+ 
+ 
+ 
+
 </form>
 
 <hr>

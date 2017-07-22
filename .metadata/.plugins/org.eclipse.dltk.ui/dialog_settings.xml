@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item value="0" key="TypeHierarchyViewPart.orientation"/>
+	<item value="2" key="TypeHierarchyViewPart.hierarchyview"/>
+	<item value="C:\Users\Alice\PhpstormProjects\ibew" key="org.eclipse.dltk.ui.last.external.project"/>
 	<section name="org.eclipse.php.internal.ui.explorer.PHPExplorerPart">
 		<item value="1" key="layout"/>
 		<item value="true" key="group_libraries"/>

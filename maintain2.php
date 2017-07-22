@@ -32,17 +32,16 @@
     </tr>
   </thead>
   <tbody>
-    <tr ng-repeat="name in names">
+    <tr ng-repeat="user in users">
       <td>
-        <button class="btn" ng-click="editUser(name.id)">  <!--user.id-->
+        <button class="btn" ng-click="editUser(user.id)">  <!--user.id-->
           <span class="glyphicon glyphicon-pencil"></span>编辑
         </button>
       </td>
-	   <td>{{ name.id }}</td>
-	   <td>{{ name.firstName }}</td>
-      <td>{{ name.lastName }}</td>
-	   <td>{{ name.bookNumber }}</td>
-	 
+	   <td>{{ user.id }}</td>
+	   <td>{{ user.fName }}</td>
+      <td>{{ user.lName }}</td>
+	 	 
 	  <!--
        <td>{{ user.fName }}</td>
       <td>{{ user.lName }}</td>

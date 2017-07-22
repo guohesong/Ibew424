@@ -1,10 +1,12 @@
 <?php 
+  
     session_start();
 	 if (!isset($_SESSION['IBEW424']) || ($_SESSION['IBEW424'] !="admin")) { 
 	 echo "Please login First.<br />";
 	 echo "<a href='login.php'>login</a>";
 	 exit;
 	 } 
+	 
 	//date_default_timezone_set("America/Regina");
 	//if (!require_once("mysqldata.php")) { die ("Can not open file mysqldata.php"); }
 	/*
@@ -21,8 +23,16 @@
 	 }
 	 */
 	?>
+	
+	<!DOCTYPE html>
+
+	
 	<html>
 	<head>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	     <script>
 		function editrecord(){
 		var fName=document.getElementById('firstName');
@@ -132,21 +142,66 @@
 	   }
 	   </script>
 	</head>
+	
+	
+	
 	<body>
-	  <p><label>First Name:</label><input type="text" id="firstName" value="Michelle" ></p>
-	  <p><label> Last Name:</label><input type="text" id="lastName" value="Feng" ></p>
-	  <p><label>  password:</label><input type="text" id="password" value="1234"></p>
-	  <p><label>book number:</label><input type="text" id="bookNumber" value="110800"></p>
-	  <p><label>      Area:</label><input type="text" id="area" value="Alberta"></p>
-	  <p><label>     title:</label><input type="text" id="degree" value="Journey womon"></p>
-		<p><input type="button" value="Search" onclick="maintain(this.value)">     <!-- editrecord() -->
-		   <input type="button" value="Update" onclick="maintain(this.value)">
-		   <input type="button" value="New" onclick="maintain(this.value)">
-		<!--   <input type="button" value="Edit" onclick="maintain(this.value)">  -->
-		   <input type="button" value="Delete" onclick="maintain(this.value)">
-		</P>
-       <p id="message"></p>		
-	 
+	
+  <center>   <img src="../img/train1.png" width=90% height="120px"  /> </center>
+	<div class="container">
+	<br/><br/>
+	<div class="row clearfix">
+		
+		<div class="col-md-4 column"><br/><br/>
+			 <button type="button" class="btn btn-success btn-lg btn-block" value="Search" onclick="maintain(this.value)" >Search</button> 
+			 <button type="button" class="btn btn-success btn-lg btn-block" value="Update" onclick="maintain(this.value)" >Update</button>
+			 <button type="button" class="btn btn-success btn-lg btn-block" value="New" onclick="maintain(this.value)" >New</button>
+			 <button type="button" class="btn btn-success btn-lg btn-block" value="Delete" onclick="maintain(this.value)" >Delete</button>
+		</div>
+		<div class="col-md-8 column">
+			<form class="form-horizontal" role="form">
+				<div class="form-group">
+					 <label for="inputtext1" class="col-sm-2 control-label">First Name</label>
+					<div class="col-sm-10">
+						<input type="Text" class="form-control" id="firstName" value="Michelle" />
+					</div>
+				</div>
+				<div class="form-group">
+					 <label for="inputtext1" class="col-sm-2 control-label">Last Name</label>
+					<div class="col-sm-10">
+						<input type="Text" class="form-control" id="lastName" value="Feng" />
+					</div>
+				</div>
+				<div class="form-group">
+					 <label for="inputtext1" class="col-sm-2 control-label">Password</label>
+					<div class="col-sm-10">
+						<input type="Text" class="form-control" id="password" value="1234" />
+					</div>
+				</div>
+				<div class="form-group">
+					 <label for="inputtext1" class="col-sm-2 control-label">Book Number</label>
+					<div class="col-sm-10">
+						<input type="Text" class="form-control" id="bookNumber" value="110800" />
+					</div>
+				</div>
+				<div class="form-group">
+					 <label for="inputtext1" class="col-sm-2 control-label">Address</label>
+					<div class="col-sm-10">
+						<input type="Text" class="form-control" id="area" value="Alberta" />
+					</div>
+				</div>
+				<div class="form-group">
+					 <label for="inputtext1" class="col-sm-2 control-label">Title</label>
+					<div class="col-sm-10">
+						<input type="Text" class="form-control" id="degree" value="Journey womon" />
+					</div>
+				</div>
+						</form>
+			   <p id="message"></p>	
+		</div>
+		</div>
+</div>
+	
 	<body>
 	
 	</html>
